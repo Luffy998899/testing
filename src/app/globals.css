@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #070709;
+  color: #f5f7fa;
+  font-family: "Exo 2", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 12% 10%, rgba(217, 0, 0, 0.23), transparent 40%), radial-gradient(circle at 80% 12%, rgba(255, 255, 255, 0.08), transparent 36%), linear-gradient(180deg, #0a0b0f 0%, #060709 45%, #050507 100%);
+}
+
+* {
+  border-color: rgba(146, 153, 171, 0.15);
+}
+
+.glass {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 12px 34px rgba(0, 0, 0, 0.3);
+}
+
+.carbon {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle at 1px 1px, rgb(28 29 33) 1px, transparent 0);
+}
+
+.text-metal {
+  background: linear-gradient(95deg, #fbfbfb, #aab2bd, #ffffff, #9aa1aa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+}
+
+.section-grid {
+  background-size: 22px 22px;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.08) 1px, transparent 0);
+}
+
+.premium-border {
+  position: relative;
+}
+
+.premium-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.35), rgba(217, 0, 0, 0.7), rgba(255, 255, 255, 0.2));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.swiper-pagination-bullet {
+  background: #d90000 !important;
+}
